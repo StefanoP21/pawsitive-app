@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from '@/core/providers/ThemeProvider';
+import Header from '@/shared/layout/navigation/header';
+import Footer from '@/shared/layout/navigation/footer';
 
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
@@ -18,6 +21,9 @@ export const metadata: Metadata = {
   title: 'PawSitive | Pet Care',
   description:
     'PawSitive es una plataforma donde podras encontrar informacion sobre cuidado de mascotas, lugares pet friendly y mucho mas.',
+  icons: {
+    icon: '/pawsitive.svg',
+  },
 };
 
 export default function RootLayout({
@@ -36,7 +42,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main>{children}</main>
+          <Header />
+          <main className="min-h-[93dvh] pt-header" data-main="true">
+            {children}
+          </main>
+          <Footer />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
