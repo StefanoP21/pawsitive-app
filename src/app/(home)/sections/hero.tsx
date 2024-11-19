@@ -7,25 +7,23 @@ import { wspMessageContent, wspNumber } from '@/constants/messages';
 export default function Hero() {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/img/banner.jpg')" }}
+      className="relative bg-cover bg-center bg-no-repeat hero-background"
+      style={{ backgroundImage: "url('/hero/banner.jpg')" }}
     >
-      <div className="absolute inset-0 bg-black opacity-60"></div>
-      <div className="relative container mx-auto flex flex-col gap-6 items-start text-white px-6 sm:px-0 py-20 sm:py-40">
+      <div className="absolute inset-0 bg-black opacity-65"></div>
+      <div className="relative container mx-auto flex flex-col gap-8 items-start justify-center text-white px-6 hero-background">
         <div className="flex items-center gap-2">
           <Image
             src="/pawsitive.svg"
             alt="PawSitive Logo"
-            width={30}
-            height={30}
-            className="w-6 h-6 sm:w-8 sm:h-8"
+            width={40}
+            height={40}
+            className="w-10 h-10"
           />
-          <h1 className="text-xl sm:text-2xl font-bold leading-tight">
-            PawSitive
-          </h1>
+          <h1 className="text-4xl font-semibold">PawSitive</h1>
         </div>
-        <p className="text-2xl sm:text-4xl font-semibold">
-          Descubre los mejores <br /> servicios para tu mascota
+        <p className="text-4xl sm:text-6xl font-bold">
+          Descubre los mejores <br /> servicios para tus mascotas
         </p>
         <div className="flex flex-wrap gap-4">
           <Link
@@ -34,18 +32,21 @@ export default function Hero() {
             )}`}
             target="_blank"
           >
-            <Button size={'lg'} className="bg-green-600 hover:bg-green-700">
+            <Button size={'lg'} className="bg-primary">
               <FaWhatsapp size={30} />
-              Chat on WhatsApp
+              WhatsApp
             </Button>
           </Link>
           <Link
             href="https://www.instagram.com/pawsitive_center/"
             target="_blank"
           >
-            <Button size={'lg'} className="bg-pink-600 hover:bg-pink-700">
+            <Button
+              size={'lg'}
+              className="bg-primary-dark hover:bg-primary-dark"
+            >
               <FaInstagram size={20} />
-              Visit our Instagram
+              Instagram
             </Button>
           </Link>
         </div>

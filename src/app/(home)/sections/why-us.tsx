@@ -3,7 +3,7 @@ import { whyUs } from '@/constants/messages';
 
 export default function WhyUs() {
   return (
-    <section className="container mx-auto flex flex-col gap-8 px-6 sm:px-0 py-10">
+    <section className="container mx-auto flex flex-col gap-12 px-6 sm:px-0 py-12">
       <h1 className="text-4xl font-bold mx-auto">
         ¿Por qué somos la mejor opción?
       </h1>
@@ -14,15 +14,15 @@ export default function WhyUs() {
             className="flex flex-col w-fit rounded-lg shadow-md sm:max-w-72"
           >
             <Image
-              src={`/img/${item.image}`}
-              alt="Why Us"
+              src={item.image}
+              alt="Why us image"
               width={400}
               height={300}
               className="object-cover min-h-72 rounded-t-lg"
             />
             <div className="flex flex-col gap-2 justify-center p-2">
-              <h2 className="text-2xl font-semibold">{item.title}</h2>
-              <p>{item.description}</p>
+              <h2 className="text-xl font-semibold">{item.title}</h2>
+              <p className="text-gray-600">{item.description}</p>
             </div>
           </article>
         ))}
