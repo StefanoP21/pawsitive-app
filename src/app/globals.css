@@ -73,3 +73,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.hero-background {
+  height: calc(100vh - 6rem);
+}
+
+@media (max-width: 640px) {
+  .hero-background {
+    height: calc(100vh - 12rem);
+  }
+}
