@@ -5,7 +5,7 @@ import { pages } from '@/constants/pages';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-dark text-white px-4 py-8 md:py-14">
+    <footer className="bg-secondary-foreground text-white px-4 py-8 md:py-14">
       <div className="md:flex justify-between container mx-auto md:px-14">
         <div className="mb-8 md:mb-0">
           <div className="flex items-center mb-4">

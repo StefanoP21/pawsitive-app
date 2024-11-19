@@ -20,11 +20,11 @@ export default function Hero() {
             height={40}
             className="w-10 h-10"
           />
-          <h1 className="text-4xl font-semibold">PawSitive</h1>
+          <h2 className="text-4xl font-semibold">PawSitive</h2>
         </div>
-        <p className="text-4xl sm:text-6xl font-bold">
+        <h1 className="text-3xl sm:text-6xl font-bold">
           Descubre los mejores <br /> servicios para tus mascotas
-        </p>
+        </h1>
         <div className="flex flex-wrap gap-4">
           <Link
             href={`https://wa.me/${wspNumber}/?text=${encodeURIComponent(
@@ -32,7 +32,10 @@ export default function Hero() {
             )}`}
             target="_blank"
           >
-            <Button size={'lg'} className="bg-primary">
+            <Button
+              size={'lg'}
+              className="bg-chart-2 hover:bg-chart-2 hover:scale-105 transform transition-transform duration-200 ease-in-out"
+            >
               <FaWhatsapp size={30} />
               WhatsApp
             </Button>
@@ -43,7 +46,7 @@ export default function Hero() {
           >
             <Button
               size={'lg'}
-              className="bg-primary-dark hover:bg-primary-dark"
+              className="bg-chart-1 hover:bg-chart-1 hover:scale-105 transform transition-transform duration-200 ease-in-out"
             >
               <FaInstagram size={20} />
               Instagram
