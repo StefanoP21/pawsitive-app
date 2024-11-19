@@ -13,7 +13,7 @@ export default function Header() {
     <header
       data-navigator="true"
       id="header-navigator"
-      className="top-0 sm:drop-shadow-sm z-20 fixed bg-primary-dark sm:bg-accent w-full h-header transition-all"
+      className="top-0 sm:drop-shadow-sm z-20 fixed bg-primary-dark md:bg-accent w-full h-header transition-all"
     >
       <div className="container mx-auto flex items-center justify-start md:justify-between px-4 sm:px-0 py-2 h-16">
         <HeaderMobile />
