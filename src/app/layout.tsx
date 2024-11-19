@@ -43,7 +43,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="min-h-[93dvh] pt-header" data-main="true">
+          <main className="min-h-[93dvh] mt-16" data-main="true">
             {children}
           </main>
           <Footer />
