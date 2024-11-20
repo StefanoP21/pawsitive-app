@@ -9,9 +9,9 @@ export const pages = [
     label: 'Hoteles',
     disabled: false,
   },
-  {
-    href: '/housers',
-    label: 'Cuidadores',
-    disabled: false,
-  },
+  // {
+  //   href: '/housers',
+  //   label: 'Cuidadores',
+  //   disabled: false,
+  // },
 ];
