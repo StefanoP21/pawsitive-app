@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { PetFriendly } from '@/db/pet-friendly/model';
 import Link from 'next/link';
+import { PetFriendly } from '@/db/pet-friendly/model';
 
 interface StoreListProps {
   stores: PetFriendly[];
@@ -32,12 +32,12 @@ export default function StoreList({ stores }: StoreListProps) {
             key={index}
             className="flex flex-col gap-4 w-full sm:w-44 lg:w-48 h-auto hover:bg-primary/10 p-2 rounded-2xl"
           >
-            <Link href={item.link_page} target="_blank">
+            <Link href={`/pet-friendly/${item.id}`}>
               <Image
                 src={`${process.env.PUBLIC_ASSETS_URL}/${item.image_card}`}
                 alt={item.title}
-                width={200}
-                height={200}
+                width={500}
+                height={500}
                 className="object-cover w-full h-60 rounded-xl shadow-md"
                 loading="lazy"
               />
