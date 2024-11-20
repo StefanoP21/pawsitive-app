@@ -2,13 +2,13 @@ import Image from 'next/image';
 import { PetFriendly } from '@/db/pet-friendly/model';
 
 interface StoreListProps {
-  storeList: PetFriendly[];
+  stores: PetFriendly[];
 }
 
-export default function StoreList({ storeList }: StoreListProps) {
+export default function StoreList({ stores }: StoreListProps) {
   let storeType: string;
 
-  switch (storeList[0].pet_place_type_id) {
+  switch (stores[0].pet_place_type_id) {
     case 1:
       storeType = 'Comercios';
       break;
@@ -25,8 +25,8 @@ export default function StoreList({ storeList }: StoreListProps) {
   return (
     <div className="flex flex-col gap-6">
       <h1 className="text-4xl font-bold text-primary">{storeType}</h1>
-      <div className="flex flex-wrap gap-x-4 gap-y-2 items-center">
-        {storeList.map((item, index) => (
+      <div className="flex flex-wrap gap-4 items-center">
+        {stores.map((item, index) => (
           <article
             key={index}
             className="flex flex-col gap-2 w-full sm:w-44 lg:w-48 h-auto hover:bg-primary/10 p-2 rounded-2xl"

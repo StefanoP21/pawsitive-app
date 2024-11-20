@@ -16,9 +16,9 @@ export default function Store() {
 
   return (
     <section className="container mx-auto flex flex-col gap-6 px-6 sm:px-0 py-12">
-      <StoreList storeList={petFriendlyRestaurants} />
-      <StoreList storeList={petFriendlyCoffee} />
-      <StoreList storeList={petFriendlyStores} />
+      <StoreList stores={petFriendlyRestaurants} />
+      <StoreList stores={petFriendlyCoffee} />
+      <StoreList stores={petFriendlyStores} />
     </section>
   );
 }
