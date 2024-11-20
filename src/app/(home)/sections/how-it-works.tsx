@@ -18,6 +18,7 @@ export default function HowitWorks() {
                 width={150}
                 height={150}
                 className="object-cover h-28 p-2"
+                loading="lazy"
               />
               <div className="border-4 border-primary rounded-xl px-4 py-2">
                 <span className="text-primary text-xl font-bold">

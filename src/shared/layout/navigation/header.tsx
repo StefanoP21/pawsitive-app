@@ -26,6 +26,7 @@ export default function Header() {
               height={30}
               title="PawSitive"
               className="hidden md:block"
+              loading="lazy"
             />
             <p className="font-semibold text-center text-xl text-white md:text-inherit ml-2">
               Paw<span className="md:text-primary">Sitive</span>

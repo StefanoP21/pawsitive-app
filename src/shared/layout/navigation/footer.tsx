@@ -15,6 +15,7 @@ export default function Footer() {
               width={30}
               height={30}
               title="PawSitive"
+              loading="lazy"
             />
             <p className="font-bold text-center text-xl ml-2">PawSitive</p>
           </div>

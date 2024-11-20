@@ -19,6 +19,7 @@ export default function WhyUs() {
               width={400}
               height={300}
               className="object-cover min-h-72 rounded-t-lg"
+              loading="lazy"
             />
             <div className="flex flex-col gap-2 justify-center p-2">
               <h2 className="text-xl font-semibold">{item.title}</h2>

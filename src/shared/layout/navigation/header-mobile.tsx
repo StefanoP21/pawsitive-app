@@ -52,6 +52,7 @@ export default function HeaderMobile() {
                         src="/pawsitive.svg"
                         width={25}
                         height={25}
+                        loading="lazy"
                       />
                       <p className="font-semibold text-center text-xl ml-2">
                         Paw<span className="text-primary">Sitive</span>
