@@ -20,8 +20,8 @@ export default function HotelList({ hotels }: HotelListProps) {
               <Image
                 src={item.image}
                 alt={item.name}
-                width={200}
-                height={200}
+                width={500}
+                height={500}
                 className="object-cover w-full h-60 rounded-xl shadow-md"
                 loading="lazy"
               />

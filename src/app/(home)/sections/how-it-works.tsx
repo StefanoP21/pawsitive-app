@@ -15,9 +15,9 @@ export default function HowitWorks() {
               <Image
                 src={item.image}
                 alt="Dog image"
-                width={150}
-                height={150}
-                className="object-cover h-28 p-2"
+                width={500}
+                height={500}
+                className="object-contain w-fit h-28 p-2"
                 loading="lazy"
               />
               <div className="border-4 border-primary rounded-xl px-4 py-2">

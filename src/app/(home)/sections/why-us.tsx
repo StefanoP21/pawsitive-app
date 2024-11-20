@@ -16,8 +16,8 @@ export default function WhyUs() {
             <Image
               src={item.image}
               alt="Why us image"
-              width={400}
-              height={300}
+              width={500}
+              height={500}
               className="object-cover min-h-72 rounded-t-lg"
               loading="lazy"
             />
