@@ -16,7 +16,7 @@ export default function HotelList({ hotels }: HotelListProps) {
             key={index}
             className="flex flex-col gap-4 w-full sm:max-w-[18rem] h-auto hover:bg-primary/10 p-2 rounded-2xl"
           >
-            <Link href={item.link_page} target="_blank">
+            <Link href={`/hotels/${item.id}`}>
               <Image
                 src={item.image}
                 alt={item.name}
@@ -30,8 +30,9 @@ export default function HotelList({ hotels }: HotelListProps) {
               <h3 className="text-xl font-semibold text-gray-700 truncate">
                 {item.name}
               </h3>
-              <p className="text-gray-600">{item.address}</p>
-              <p className="text-gray-600 italic">{item.phoneContact}</p>
+              <p className="text-gray-600">
+                {item.location.district} - {item.location.province}
+              </p>
             </div>
           </article>
         ))}
