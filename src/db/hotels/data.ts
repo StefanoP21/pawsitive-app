@@ -11,7 +11,12 @@ export const hotelsData: Hotel[] = [
       'Room PET, Área de Piscina, Zona de Grooming & Spa, Zona de Juegos y Traslados.',
     schedule: '8:30 am a 5:30 pm',
     phoneContact: '(+51) 987 507 189',
-    address: 'Av. Los Álamos 183, Chilca 15870',
+    address: [
+      {
+        detail: 'Av. Los Álamos 183, Chilca 15870',
+        link_map: null,
+      },
+    ],
     email: 'contacto@mipatapethotel.net',
     minPrice: 55,
     maxPrice: 100,
@@ -21,7 +26,6 @@ export const hotelsData: Hotel[] = [
       department: 'Lima',
       province: 'Cañete',
       district: 'Chilca',
-      link_map: null,
     },
   },
   {
@@ -35,7 +39,12 @@ export const hotelsData: Hotel[] = [
     schedule:
       'Lunes a sábado de 8:00 am a 5:30 pm y domingo de 8:00 am a 12:00 pm',
     phoneContact: '(+51) 994 824 066',
-    address: 'Calle Los Cactus, Mz. Q, lote 15A - Huertos de Lurín',
+    address: [
+      {
+        detail: 'Calle Los Cactus, Mz. Q, lote 15A - Huertos de Lurín',
+        link_map: 'https://maps.app.goo.gl/gxghEKY9rYxtGkUj6',
+      },
+    ],
     email: 'reservas@wau.pe',
     minPrice: 55,
     maxPrice: 100,
@@ -45,7 +54,6 @@ export const hotelsData: Hotel[] = [
       department: 'Lima',
       province: 'Lima',
       district: 'Pachacamac',
-      link_map: 'https://maps.app.goo.gl/gxghEKY9rYxtGkUj6',
     },
   },
   {
@@ -57,7 +65,12 @@ export const hotelsData: Hotel[] = [
     service_type: 'Hospedaje Clásico, Hospedaje Premium y Full Day.',
     schedule: 'lunes a domingo de 8:00 am a 10:00 pm',
     phoneContact: '(+51) 978 375 238',
-    address: 'Av. Los Pinos 123, Lurín',
+    address: [
+      {
+        detail: 'Av. Los Pinos 123, Lurín',
+        link_map: null,
+      },
+    ],
     email: 'reservas@petscampperu.com',
     minPrice: 55,
     maxPrice: 100,
@@ -67,7 +80,6 @@ export const hotelsData: Hotel[] = [
       department: 'Lima',
       province: 'Lima',
       district: 'Lurín',
-      link_map: null,
     },
   },
   {
@@ -80,7 +92,12 @@ export const hotelsData: Hotel[] = [
       'Hotel, Guardería, Transporte canino, baño tradicional o medicado, Vacunación, Desoarasitación y Educación canina.',
     schedule: 'lunes a Sabado de 9:00 am - 5:00 pm',
     phoneContact: '(+51) 999 055 841',
-    address: 'Huachipa, Lima',
+    address: [
+      {
+        detail: 'Huachipa, Lima',
+        link_map: null,
+      },
+    ],
     email: 'doggycamp@outlook.com',
     minPrice: 55,
     maxPrice: 100,
@@ -90,7 +107,6 @@ export const hotelsData: Hotel[] = [
       department: 'Lima',
       province: 'Lima',
       district: 'Huachipa',
-      link_map: null,
     },
   },
   {
@@ -103,7 +119,12 @@ export const hotelsData: Hotel[] = [
       'Alojamiento, Movilidad, Baño, Atención Médica, Juegos y Premios, Área de juego, Caminatas, Alimentación y Guardería.',
     schedule: 'Lunes a Domingo 8:00 am a 6:00 pm',
     phoneContact: '(+51) 966 132 594',
-    address: 'Km 80 Panamericana Sur, Mala',
+    address: [
+      {
+        detail: 'Km 80 Panamericana Sur, Mala',
+        link_map: null,
+      },
+    ],
     email: 'contacto@mipatapethotel.net',
     minPrice: 55,
     maxPrice: 100,
@@ -113,7 +134,81 @@ export const hotelsData: Hotel[] = [
       department: 'Lima',
       province: 'Cañete',
       district: 'Mala',
-      link_map: null,
+    },
+  },
+  {
+    id: 6,
+    image: '/hotels/dogpackers.jpg',
+    name: 'Dog Packers',
+    description:
+      'Acompañaremos a tu engreído en su proceso de adaptación, nos aseguraremos de que se sienta cómodo en este nuevo espacio y, lo más importante, que se integre a la manada. Recuerda que una sesión de sociabilización es requisito previo para ser parte de Dogpackers.',
+    service_type: 'Daycare, Overnight, Veterianrio, Baños y Grooming.',
+    schedule:
+      'Lunes a Sábado: 6:45 am a 8:00 pm & Domingo: 10:00 am. a 6:00 pm',
+    phoneContact: '(+51) 964 180 978',
+    address: [
+      {
+        detail: 'Av. 28 de Julio 640, Miraflores, Lima Perú',
+        link_map: 'https://goo.gl/maps/ebDREi1r8cauek4q7',
+      },
+      {
+        detail: 'Av. Antonio Miro Quesada 291, Magdalena',
+        link_map: 'https://maps.app.goo.gl/uMAjNt5bGCY1pf8r7',
+      },
+    ],
+    email: null,
+    minPrice: 30,
+    maxPrice: 150,
+    link_page: 'https://dogpackers.pe/',
+    location: {
+      country: 'Peru',
+      department: 'Lima',
+      province: 'Lima',
+      district: 'Miraflores',
+    },
+  },
+  {
+    id: 7,
+    image: '/hotels/guau-miau.webp',
+    name: 'Guau Miau - Pet Hotel',
+    description:
+      'Guau Miau Pet Hotel inició en el 2014 en Lima Metropolitana cuidando perritos de todo Lima Metropolitana dando la mejor referencia de cuidado personalizado a tu engreido, brindándole diversión y seguridad al ingresar a la segunda familia.',
+    service_type: 'Servico de movilidad, Hospedaje, Guardería, Baño y Corte.',
+    schedule:
+      'Lunes - Domingo: 8:30 am - 8:30 pm & Feriados: 8:30 am - 7:00 am',
+    phoneContact: '(+51) 946 768 006',
+    address: null,
+    email: 'reservas@hotelguaumiau.com.pe',
+    minPrice: 35,
+    maxPrice: 45,
+    link_page: 'https://www.hotelguaumiau.com.pe/',
+    location: {
+      country: 'Peru',
+      department: 'Lima',
+      province: 'Lima',
+      district: 'Pueblo libre',
+    },
+  },
+  {
+    id: 8,
+    image: '/hotels/perrotel.jpg',
+    name: 'Perrotel',
+    description:
+      'La historia de Perrotel comienza con la dedicación de Camila a rescatar animales abandonados en situación de vulnerabilidad, ofreciéndoles un hogar temporal en su propio departamento. Pronto, la cantidad de animales rescatados supera su capacidad, y se ve obligada a buscarles hogares temporales hasta encontrarles un hogar definitivo.',
+    service_type: 'Hospedaje, Rehabilitación Canina y Boutique.',
+    schedule:
+      'Lunes a Sábado: 6:45 am a 8:00 pm & Domingo: 10:00 am. a 6:00 pm',
+    phoneContact: '(+51) 908 889 012',
+    address: null,
+    email: null,
+    minPrice: 55,
+    maxPrice: 100,
+    link_page: 'https://perrotelperu.com/',
+    location: {
+      country: 'Peru',
+      department: 'Lima',
+      province: 'Lima',
+      district: 'Cieneguilla',
     },
   },
 ];

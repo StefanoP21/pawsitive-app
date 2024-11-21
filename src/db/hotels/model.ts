@@ -6,8 +6,8 @@ export interface Hotel {
   service_type: string;
   schedule: string;
   phoneContact: string;
-  address: string;
-  email: string;
+  address: Address[] | null;
+  email: string | null;
   minPrice: number;
   maxPrice: number;
   link_page: string;
@@ -19,5 +19,9 @@ export interface Location {
   department: string;
   province: string;
   district: string;
+}
+
+export interface Address {
+  detail: string;
   link_map: string | null;
 }
