@@ -1,8 +1,8 @@
 'use client';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
-import { FaFacebook } from 'react-icons/fa';
 import { petFriendlyData } from '@/db/pet-friendly/data';
+import { TbWorldShare } from 'react-icons/tb';
 
 export default function Detail() {
   const params = useParams();
@@ -72,9 +72,13 @@ export default function Detail() {
               <p>{store?.phone}</p>
             </div>
             <div className="text-gray-600">
-              <h3 className="text-lg font-semibold">Redes</h3>
-              <a href={store?.link_page} target="_blank">
-                <FaFacebook size={30} />
+              <h3 className="text-lg font-semibold">Página</h3>
+              <a
+                href={store?.link_page}
+                target="_blank"
+                className="text-chart-5"
+              >
+                <TbWorldShare size={30} />
               </a>
             </div>
           </article>
