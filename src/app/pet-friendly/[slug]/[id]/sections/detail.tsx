@@ -71,16 +71,18 @@ export default function Detail() {
               <h3 className="text-lg font-semibold">Teléfono</h3>
               <p>{store?.phone}</p>
             </div>
-            <div className="text-gray-600">
-              <h3 className="text-lg font-semibold">Página</h3>
-              <a
-                href={store?.link_page}
-                target="_blank"
-                className="text-chart-5"
-              >
-                <TbWorldShare size={30} />
-              </a>
-            </div>
+            {store?.link_page && (
+              <div className="text-gray-600">
+                <h3 className="text-lg font-semibold">Página</h3>
+                <a
+                  href={store?.link_page}
+                  target="_blank"
+                  className="text-chart-5"
+                >
+                  <TbWorldShare size={30} />
+                </a>
+              </div>
+            )}
           </article>
 
           <article className="grid col-span-1 sm:col-span-2 gap-2 border border-chart-5/50 rounded-lg p-5">

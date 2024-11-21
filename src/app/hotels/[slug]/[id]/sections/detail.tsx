@@ -105,7 +105,7 @@ export default function Detail() {
               <div className="text-gray-600">
                 <h3 className="text-lg font-semibold">Mapa</h3>
                 <a
-                  href={hotel?.link_page}
+                  href={hotel?.location.link_map}
                   target="_blank"
                   className="text-chart-5"
                 >
