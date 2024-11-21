@@ -16,7 +16,11 @@ export default function HotelList({ hotels }: HotelListProps) {
             key={index}
             className="flex flex-col gap-4 w-full sm:max-w-[18rem] h-auto hover:bg-primary/10 p-2 rounded-2xl"
           >
-            <Link href={`/hotels/${item.id}`}>
+            <Link
+              href={`/hotels/${item.name
+                ?.replace(/[^a-zA-Z0-9-]/g, '-')
+                .toLowerCase()}/${item.id}`}
+            >
               <Image
                 src={item.image}
                 alt={item.name}

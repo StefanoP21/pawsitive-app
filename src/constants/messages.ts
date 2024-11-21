@@ -1,5 +1,5 @@
 export const wspMessageContent =
-  '¡Hola! Estoy explorando la web y me encontré con tu sitio. Estoy interesado en obtener información sobre los servicios de PawSitive. ¿Podrías ayudarme?';
+  '¡Hola! Estoy interesado en obtener información sobre los servicios de PawSitive. ¿Podrías ayudarme?';
 
 export const wspMessageService =
   '¡Hola! Estoy explorando la web y me encontré con tu sitio. Estoy interesado en el servicio ';
@@ -37,25 +37,25 @@ export const howItWorks = [
   {
     title: 'Busca y elige',
     description:
-      'Busca la familia perfecta para cuidar a tu mascota. Puedes realizar vistas previas para que conoscas el lugar y la familia que cuidará a tu mascota por ti.',
+      'Busca en el catálogo de hoteles y elige el que más te guste para tu mascota.',
     image: '/how-it-works/1.png',
   },
   {
     title: 'Reserva',
     description:
-      'Cuando haces una reserva, la propiedad queda bloqueada hasta que el propietario responda a tu solicitud con un máximo de 24 horas.',
+      'Podrás dirigirte a la página del hotel y reservar la fecha que desees para tu mascota.',
     image: '/how-it-works/2.png',
   },
   {
     title: 'Confirmación',
     description:
-      'Tan pronto el cuidador acepte la reserva, cargaremos el importe corespondiente en tu metodo de pago.',
+      'Tan pronto el hotel confirme tu reserva, podrás ver los detalles de tu reserva en tu perfil.',
     image: '/how-it-works/3.png',
   },
   {
     title: 'Fecha de entrada',
     description:
-      'El siguiente paso es dejar a tu mascota con la familia elegida.',
+      'El siguiente paso es dejar a tu mascota en el hotel en la fecha de entrada.',
     image: '/how-it-works/4.png',
   },
 ];

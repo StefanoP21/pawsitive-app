@@ -32,7 +32,11 @@ export default function StoreList({ stores }: StoreListProps) {
             key={index}
             className="flex flex-col gap-4 w-full sm:w-44 lg:w-48 h-auto hover:bg-primary/10 p-2 rounded-2xl"
           >
-            <Link href={`/pet-friendly/${item.id}`}>
+            <Link
+              href={`/pet-friendly/${item.title
+                ?.replace(/[^a-zA-Z0-9-]/g, '-')
+                .toLowerCase()}/${item.id}`}
+            >
               <Image
                 src={`${process.env.PUBLIC_ASSETS_URL}/${item.image_card}`}
                 alt={item.title}
