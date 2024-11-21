@@ -2,7 +2,7 @@ export interface PetFriendly {
   id: number;
   title: string;
   adress: string;
-  link_page: string;
+  link_page: string | null;
   phone: string;
   pet_place_type_id: number;
   location_id: number;
