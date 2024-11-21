@@ -90,7 +90,7 @@ export const hotelsData: Hotel[] = [
       department: 'Lima',
       province: 'Lima',
       district: 'Huachipa',
-      link_map: 'https://goo.gl/maps/5Q5Jz4jUZG2BQb4e6',
+      link_map: null,
     },
   },
   {
@@ -113,7 +113,7 @@ export const hotelsData: Hotel[] = [
       department: 'Lima',
       province: 'Cañete',
       district: 'Mala',
-      link_map: 'https://goo.gl/maps/5Q5Jz4jUZG2BQb4e6',
+      link_map: null,
     },
   },
 ];
